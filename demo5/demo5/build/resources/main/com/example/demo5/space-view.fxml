@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo5.HelloController"
+      spacing="15">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="15">
+        <Label text="SpaceApp" style="-fx-font-size:25px; -fx-font-weight:bold;"/>
+        <Region fx:id="spacer" HBox.hgrow="ALWAYS"/>
+        <Button text="Agregar Nuevo Planeta" onAction="#openAddPlanetForm"/>
+    </HBox>
+
+    <ScrollPane fitToWidth="true" fitToHeight="true"
+                hbarPolicy="AS_NEEDED" vbarPolicy="AS_NEEDED"  style="-fx-background-color: transparent; -fx-border-color: transparent;">
+        <content>
+            <TilePane fx:id="tilePane"
+                      hgap="15" vgap="15"
+                      prefColumns="3"
+                      alignment="CENTER"
+            >
+            </TilePane>
+        </content>
+    </ScrollPane>
+</VBox>

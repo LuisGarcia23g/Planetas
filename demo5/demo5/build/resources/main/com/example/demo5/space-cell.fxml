@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="240" prefWidth="268.0" spacing="10"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo5.SpaceController">
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill fill="white">
+                    <radii>
+                        <CornerRadii bottomLeft="10" bottomRight="10" topLeft="10" topRight="10" />
+                    </radii>
+                    <insets>
+                        <Insets bottom="10" left="10" right="10" top="10" />
+                    </insets>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+
+    <effect>
+        <DropShadow color="#444444" offsetX="0" offsetY="2" radius="5" />
+    </effect>
+
+    <ImageView fx:id="imgEntity" fitHeight="100" fitWidth="100" preserveRatio="true" />
+
+    <Label fx:id="lblName" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="14" />
+        </font>
+    </Label>
+
+    <Label fx:id="lblMass" textAlignment="CENTER">
+        <font>
+            <Font size="12" />
+        </font>
+    </Label>
+</VBox>
